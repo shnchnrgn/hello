@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #a0c4ff, #bdb2ff);
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        p {
+            font-size: 18px;
+            color: #4a90e2;
+        }
+        .button-container {
+            margin-top: 20px;
+            position: relative;
+            height: 150px;
+        }
+        .option {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            display: inline-block;
+        }
+        .option:hover {
+            background-color: #6ea8fe;
+            color: white;
+        }
+        .next-page {
+            background-color: #89c2d9;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Baby, will you be my Valentine?</h1>
+        <p>Love, you are my sunshine, my biggest plot twist, and my happiest what-if. I can't imagine Valentine's Day without you.</p>
+        <div class="button-container">
+            <button class="option" onclick="goToPage('page2.html')">Of course!</button>
+            <button class="option" onclick="goToPage('page3.html')">Let me think...</button>
+            <button class="option" onclick="goToPage('page4.html')">Not sure, convince me!</button>
+            <button class="option" onclick="goToPage('page5.html')">Hmm... maybe another time</button>
+        </div>
+    </div>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
