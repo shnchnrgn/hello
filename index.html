@@ -42,4 +42,24 @@
             background-color: #6ea8fe;
             color: white;
         }
-    </
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Baby, will you be my Valentine?</h1>
+        <p>Love, you are my sunshine, my biggest plot twist, and my happiest what-if. I can't imagine Valentine's Day without you.</p>
+        <div class="button-container">
+            <button class="option" onclick="goToPage('yes.html')">Of course!</button>
+            <button class="option" onclick="goToPage('think.html')">Let me think...</button>
+            <button class="option" onclick="goToPage('convince.html')">Not sure, convince me!</button>
+            <button class="option" onclick="goToPage('maybe.html')">Hmm... maybe another time</button>
+        </div>
+    </div>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
